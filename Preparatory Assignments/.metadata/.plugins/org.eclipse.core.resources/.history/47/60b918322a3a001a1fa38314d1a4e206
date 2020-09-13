@@ -1,0 +1,108 @@
+/*
+ ============================================================================
+ Name        : asgn_4.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 3
+typedef struct book
+{
+	int id;
+	char name[20];
+	int price;
+}BOOK;
+/*int compare(const void *a,const void *b)
+{
+	return (*(int *)a-*(int *)b);
+}*/
+//void mergesort(BOOK *p,int lb,int ub);
+void accept_info(BOOK *p);
+void display_info(BOOK *p);
+int main(void)
+{
+	BOOK b[SIZE];
+	BOOK *p=b;
+	for(int i=0;i<SIZE;i++)
+		accept_info(&p[i]);
+	for(int i=0;i<SIZE;i++)
+		display_info(&p[i]);
+	//qsort(b,SIZE,sizeof(int),compare);
+/*	printf("\nAfter the sorting\n");
+	for(int i=0;i<SIZE;i++)
+			{
+				display_info(&p[i]);
+			}*/
+	return EXIT_SUCCESS;
+}
+/*void merge(BOOK *p,int lb,int mid,int ub)
+{
+	BOOK s[SIZE];
+	int i=lb,j=mid+1,k=lb;
+	while(i<=mid && j<=ub)
+	{
+		if(p[i]->price<=p[j]->price)
+		{
+			s[i]=s[j];
+			i++;
+		}
+		else
+		{
+			s[j]=s[i];
+			j++;
+		}
+		k++;
+	}
+	if(i>mid)
+	{
+		while(j<=ub)
+		{
+			s[k]=p[j];
+			j++; k++;
+		}
+	}
+	else
+	{
+
+		while(i<=mid)
+		{
+			s[k]=p[i];
+			i++; k++;
+		}
+	}
+	for(k=lb;k<=ub;k++)
+	{
+		p[k]=s[k];
+	}
+}
+void mergesort(BOOK *p,int lb,int ub)
+{
+	int mid;
+	if(lb<ub)
+	{
+		mid=(lb+ub)/2;
+		mergesort(p,lb,mid);
+		mergesort(p,mid+1,ub);
+		merge(p,lb,mid,ub);
+	}
+}*/
+void accept_info(BOOK *p)
+{
+			printf("\nPlease enter Book info\n1)Book Id");
+			scanf("%d",&p->id);
+			scanf("%*c");
+			printf("\n2)Book Name:");
+			fgets(p->name,20,stdin);
+			printf("\n3)Price");
+			scanf("%d",&p->price);
+}
+void display_info(BOOK *p)
+{
+	printf("\nBook ID\tName:\t\tprice:\t");
+	printf("\n%.6d\t%.6s\t%.6d",p->id,p->name,p->price);
+}

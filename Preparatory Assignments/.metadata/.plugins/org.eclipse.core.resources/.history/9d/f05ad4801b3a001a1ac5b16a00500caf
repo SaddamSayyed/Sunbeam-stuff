@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : asgn_1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 5
+typedef enum menu {SORT_DESCENDING,SORT_ASCENDING};
+typedef struct book
+{
+	int id;
+	char name[20];
+	int price;
+}BOOK;
+void accept_info(BOOK *p);
+void display_info(BOOK *p);
+int main(void) {
+	BOOK b[SIZE];
+	BOOK *p=&b;
+	accept_info(p);
+	display_info(p);
+	return EXIT_SUCCESS;
+}
+void accept_info(BOOK *p)
+{
+	printf("Please enter the Book info as\n1)ID\n2)Name\n3)Price\n");
+	scanf("%d %s %d",&p->id,p->name,&p->price);
+}
+void display_info(BOOK *p)
+{
+
+	printf("\nthe Book info is as follows:\n1)ID:"
+			" %d\n2)Name: %s\n3)price: %d",p->id,p->name,p->price);
+}

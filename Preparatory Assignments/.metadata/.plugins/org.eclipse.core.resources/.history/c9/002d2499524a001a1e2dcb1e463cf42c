@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : doubly_linked_list.c
+ Author      : Saddam Sayyed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef enum{EXIT,ADDFIRST,ADDLAST,ADDATPOS,DELFIRST,DELLAST,DELFROMPOS,TRAVERSE}MENU;
+typedef struct node
+{
+	int data;
+	struct node *next;
+	struct node *prev;
+}NODE;
+void accept_data(int *data)
+{
+	printf("\n Specify Data to add:");
+	scanf("%d",data);
+}
+NODE *head=NULL;
+MENU menu_choice()
+{
+	MENU mchoice;
+	printf("\n 0. Exit");
+	printf("\n 1. Add Element at First");
+	printf("\n 2. Add Element at last");
+	printf("\n 3. Add Element at given position");
+	printf("\n 4. Delete Element from First");
+	printf("\n 5. Delete Element from last");
+	printf("\n 6. Delete Element from given position");
+	printf("\n 7. Traverse ");
+	scanf("%d",&mchoice);
+	return mchoice;
+}

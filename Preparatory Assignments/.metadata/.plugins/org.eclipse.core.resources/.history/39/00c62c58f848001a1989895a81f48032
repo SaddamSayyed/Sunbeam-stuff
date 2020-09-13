@@ -1,0 +1,22 @@
+/*
+ ============================================================================
+ Name        : singly_linkedlist.c
+ Author      : Saddam Sayyed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef enum{EXIT,ADDFIRST,ADDLAST,ADDATPOS,DELFIRST,DELLAST,DELFROMPOS,TRAVERSE}MENU;
+typedef struct node
+{
+	int data;
+	node *next;
+}node;
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}

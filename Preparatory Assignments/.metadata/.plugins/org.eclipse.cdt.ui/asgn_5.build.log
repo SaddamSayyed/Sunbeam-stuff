@@ -1,0 +1,15 @@
+14:33:55 **** Incremental Build of configuration Debug for project asgn_5 ****
+make all 
+Building file: ../src/asgn_5.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/asgn_5.d" -MT"src/asgn_5.o" -o "src/asgn_5.o" "../src/asgn_5.c"
+Finished building: ../src/asgn_5.c
+ 
+Building target: asgn_5
+Invoking: GCC C Linker
+gcc  -o "asgn_5"  ./src/asgn_5.o   
+Finished building target: asgn_5
+ 
+
+14:33:55 Build Finished (took 169ms)
+

@@ -1,0 +1,27 @@
+18:44:22 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c: In function ‘add_item_data’:
+../src/test.c:100:15: warning: the comparison will always evaluate as ‘true’ for the address of ‘fwrite’ will never be NULL [-Waddress]
+     if(fwrite != 0)
+               ^~
+../src/test.c: In function ‘main’:
+../src/test.c:289:10: warning: unused variable ‘demo’ [-Wunused-variable]
+     ITEM demo;
+          ^~~~
+../src/test.c: At top level:
+../src/test.c:41:6: warning: array ‘str’ assumed to have one element
+ char str[];
+      ^~~
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+
+18:44:23 Build Finished (took 1s.70ms)
+

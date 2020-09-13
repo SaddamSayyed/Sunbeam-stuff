@@ -1,0 +1,38 @@
+/*
+ ============================================================================
+ Name        : asgn_2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void copy_string(char *s,char *d);
+int main(void)
+{
+	char s[20]="HINJEWADI";
+	char d[20]="sun";
+	printf("s : %s\n",s);
+	printf("d : %s\n",d);
+	copy_string(s,d);
+	printf("\nAfter Copy %d : ",strlen(d));
+	printf("s : %s\n",s);
+	printf("d : %s\n",d);
+	return EXIT_SUCCESS;
+}
+void copy_string(char *s,char *d)
+{
+	char a;
+	int l=0,i=0;
+	do
+	{
+		a=s[i];
+		i++;
+		l++;
+
+	}while(a!=NULL);
+}

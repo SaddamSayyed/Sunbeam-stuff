@@ -1,0 +1,27 @@
+10:36:40 **** Incremental Build of configuration Debug for project asgn_2 ****
+make all 
+Building file: ../src/asgn_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/asgn_2.d" -MT"src/asgn_2.o" -o "src/asgn_2.o" "../src/asgn_2.c"
+../src/asgn_2.c: In function ‘main’:
+../src/asgn_2.c:37:4: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+  n=strcmp(d,s);
+    ^~~~~~
+../src/asgn_2.c: In function ‘str_len’:
+../src/asgn_2.c:86:10: warning: comparison between pointer and integer
+  }while(a!=NULL);
+          ^~
+../src/asgn_2.c: In function ‘str_copy’:
+../src/asgn_2.c:99:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    d[i]=NULL;
+        ^
+Finished building: ../src/asgn_2.c
+ 
+Building target: asgn_2
+Invoking: GCC C Linker
+gcc  -o "asgn_2"  ./src/asgn_2.o   
+Finished building target: asgn_2
+ 
+
+10:36:41 Build Finished (took 167ms)
+

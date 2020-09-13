@@ -1,0 +1,423 @@
+03:38:51 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+03:41:27 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+03:43:47 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+03:44:29 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+03:45:11 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+03:45:11 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+Building file: ../src/doubly_linked_list.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/doubly_linked_list.d" -MT"src/doubly_linked_list.o" -o "src/doubly_linked_list.o" "../src/doubly_linked_list.c"
+../src/doubly_linked_list.c: In function ‘menu_choice’:
+../src/doubly_linked_list.c:37:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘MENU * {aka enum <anonymous> *}’ [-Wformat=]
+  scanf("%d",&mchoice);
+         ~^  ~~~~~~~~
+../src/doubly_linked_list.c: In function ‘add_at_pos’:
+../src/doubly_linked_list.c:93:19: warning: unused variable ‘temp’ [-Wunused-variable]
+  NODE *trav=head,*temp;
+                   ^~~~
+../src/doubly_linked_list.c: In function ‘main’:
+../src/doubly_linked_list.c:198:4: warning: enumeration value ‘EXIT’ not handled in switch [-Wswitch]
+    switch(mchoice)
+    ^~~~~~
+Finished building: ../src/doubly_linked_list.c
+ 
+Building target: doubly_linked_list
+Invoking: GCC C Linker
+gcc  -o "doubly_linked_list"  ./src/doubly_linked_list.o   
+Finished building target: doubly_linked_list
+ 
+03:45:14 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+03:47:25 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+Building file: ../src/asgn_7.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/asgn_7.d" -MT"src/asgn_7.o" -o "src/asgn_7.o" "../src/asgn_7.c"
+../src/asgn_7.c:26:3: warning: declaration does not declare anything
+  };
+   ^
+../src/asgn_7.c: In function ‘menu_choice’:
+../src/asgn_7.c:47:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘MENU * {aka enum <anonymous> *}’ [-Wformat=]
+  scanf("%d",&mchoice);
+         ~^  ~~~~~~~~
+../src/asgn_7.c: In function ‘main’:
+../src/asgn_7.c:296:3: warning: enumeration value ‘EXIT’ not handled in switch [-Wswitch]
+   switch(mchoice)
+   ^~~~~~
+Finished building: ../src/asgn_7.c
+ 
+Building target: asgn_7
+Invoking: GCC C Linker
+gcc  -o "asgn_7"  ./src/asgn_7.o   
+Finished building target: asgn_7
+ 
+03:47:26 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+03:50:18 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+03:53:10 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:49 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:50 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:51 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:17:01 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:01 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:02 **** Incremental Build of configuration Debug for project test ****
+make all 
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:9: warning: ‘return’ with a value, in function returning void
+  return 0;
+         ^
+Finished building target: test
+../src/test.c:14:6: note: declared here
+ void main()
+      ^~~~
+ 
+17:17:10 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:10 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:10 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:18:29 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:29 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:29 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:18:42 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:46 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:42 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:42 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:42 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:21:45 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:45 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:45 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:47 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:22:01 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:22:48 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:22:48 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:22:48 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+../src/test.c:20:11: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("%u",a);
+          ~^
+          %s
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:22:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:31 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:31 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:31 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+../src/test.c:20:11: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("%u",a);
+          ~^
+          %s
+../src/test.c:21:35: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("\nlocation of string[1]=%u",(char *)a+1);
+                                  ~^  ~~~~~~~~~~~
+                                  %s
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:25:37 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:57 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:57 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:57 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+../src/test.c:20:11: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("%u",a);
+          ~^
+          %s
+../src/test.c:21:35: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("\nlocation of string[1]=%u",&a[3]);
+                                  ~^  ~~~~~
+                                  %s
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:28:07 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:28:07 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:28:07 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+../src/test.c:20:11: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("%u",a);
+          ~^
+          %s
+../src/test.c:21:35: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("\nlocation of string[1]=%u",&a[2]);
+                                  ~^  ~~~~~
+                                  %s
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:28:12 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:41 **** Incremental Build of configuration Debug for project asgn_7 ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:41 **** Incremental Build of configuration Debug for project doubly_linked_list ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:41 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c:14:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^~~~
+../src/test.c: In function ‘main’:
+../src/test.c:19:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nsize of a= %d\n",sizeof(a));
+                       ~^
+                       %ld
+../src/test.c:20:11: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("%u",a);
+          ~^
+          %s
+../src/test.c:21:17: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 3 has type ‘char *’ [-Wformat=]
+  printf("\n%c =%u\n%c=%u",*a,&a[0],a[1],&a[1]);
+                ~^
+                %s
+../src/test.c:21:24: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 5 has type ‘char *’ [-Wformat=]
+  printf("\n%c =%u\n%c=%u",*a,&a[0],a[1],&a[1]);
+                       ~^                ~~~~~
+                       %s
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 
+17:30:45 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+18:44:22 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+../src/test.c: In function ‘add_item_data’:
+../src/test.c:100:15: warning: the comparison will always evaluate as ‘true’ for the address of ‘fwrite’ will never be NULL [-Waddress]
+     if(fwrite != 0)
+               ^~
+../src/test.c: In function ‘main’:
+../src/test.c:289:10: warning: unused variable ‘demo’ [-Wunused-variable]
+     ITEM demo;
+          ^~~~
+../src/test.c: At top level:
+../src/test.c:41:6: warning: array ‘str’ assumed to have one element
+ char str[];
+      ^~~
+Finished building: ../src/test.c
+ 
+Building target: test
+Invoking: GCC C Linker
+gcc  -o "test"  ./src/test.o   
+Finished building target: test
+ 

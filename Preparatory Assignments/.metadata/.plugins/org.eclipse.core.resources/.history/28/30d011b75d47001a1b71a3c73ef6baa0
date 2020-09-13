@@ -1,0 +1,53 @@
+/*
+ ============================================================================
+ Name        : asgn_6.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 5
+typedef struct student
+{
+	int rear,front,std,roll_number;
+	char name[20];
+	char *sub[6];
+	int marks[6];
+}STUDENT;
+typedef enum {EXIT,ADD,DELETE,TRAVERSE}MENUOPERATIONS;
+MENUOPERATIONS menu_choice()
+{
+	MENUOPERATIONS mchoice;
+	printf("\n 0. Exit");
+	printf("\n 1. Add Student data/PUSH");
+	printf("\n 2. Delete Student data/POP");
+	printf("\n 3. Traverse");
+	scanf("%d",&mchoice);
+	return mchoice;
+}
+void init_q(STUDENT *p)
+{
+	int i;
+	p->front=-1;
+	p->rear=-1;
+	p->name[20]=NULL;
+	p->roll_number=0;
+	p->std=0;
+	for(i=0;i<SIZE;i++)
+	{
+		p->marks[i]=-1;
+		p->sub[i]=NULL;
+	}
+}
+int main(void)
+{
+	STUDENT s1;
+	MENUOPERATIONS mchoice;
+	STUDENT *p=&s1;
+	init_queue(&s1);
+	return EXIT_SUCCESS;
+}

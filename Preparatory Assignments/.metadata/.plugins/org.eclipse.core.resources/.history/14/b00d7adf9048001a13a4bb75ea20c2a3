@@ -1,0 +1,112 @@
+/*
+ ============================================================================
+ Name        : asgn_6.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define SIZE 2
+#define BOOL int
+#define TRUE 1
+#define FALSE 0
+typedef enum {EXIT,ADD,DELETE,DISPLAY}MENU;
+typedef struct
+{
+	char name[20];
+	int roll_no;
+	int std;
+}S;
+int rear,front;
+void init()
+{
+	rear=front=-1;
+}
+MENU mchoice()
+{
+	MENU m;
+	printf("\nChoose one of the options\n 1.Add\n 2.Delete\n 3.Display\n 4.Exit");
+	scanf("%d",&m);
+	scanf("%*c");
+	return m;
+}
+BOOL is_empty()
+{
+	if( (rear==front && rear==-1) )
+		return TRUE;
+	else
+		return FALSE;
+}
+BOOL is_full()
+{
+	if( (rear==SIZE-1 && front== -1) || (rear==front && rear!=-1))
+		return TRUE;
+	else
+		return FALSE;
+}
+void add(S *s)
+{
+	if(rear==SIZE-1)
+		rear=0;
+	else
+		rear++;
+	printf("Please enter info\n 1.Name :");
+	fgets(s[rear].name,20,stdin);
+	printf("\n 2.Roll Number :");
+	scanf("%d",&s[rear].roll_no);
+	printf("\n 3.Standard :");
+	scanf("%d",&s[rear].std);
+	printf("\n The Information is Added.");
+}
+void delete(S *s)
+{
+	if(front==SIZE-1)
+		front=0;
+	else
+		front++;
+	printf("\n The Information is deleted.");
+}
+void display(S *s)
+{
+	printf("\n THe Student's Information is as Follows:\n 1.Name : %s"
+			"\n 2.Roll number : %d\n 3.Standard : %d\n",s[rear].name,s[rear].roll_no,s[rear].std);
+}
+int main()
+{
+	S s[SIZE];
+	init();
+	MENU choice;
+	do
+	{
+		choice=mchoice();
+		switch(choice)
+		{
+			case ADD:
+					if(is_full())
+						printf("\n The queue is Full");
+					else
+						add(s);
+					break;
+			case DELETE:
+					if(is_empty())
+						printf("\n The queue is empty");
+					else
+						delete(s);
+					break;
+			case DISPLAY:
+					if(is_empty())
+						printf("\n The queue is empty");
+					else
+						display(s);
+
+
+		}
+	}while(choice!=EXIT);
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,90 @@
+/*
+ ============================================================================
+ Name        : asgn_7.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef enum{EXIT,ADDFIRST,ADDLAST,ADD_AT_POS,DEL_FIRST,DEL_LAST,DEL_AT_POS,
+				DEL_ALL,FINDBY_ID,FINDBY_NAME,DISPLAY}MENU;
+typedef struct accounts
+{
+	int id;
+	char type[10];
+	float bal;
+	struct acount_holder
+	{
+		char name[20];
+		char addrs[20];
+		char cont[10];
+	};
+	struct acount_holder acc_holder;
+	struct accounts *next;
+	struct accounts *prev;
+
+}BANKACC;
+BANKACC *head=NULL;
+MENU menu_choice()
+{
+	MENU mchoice;
+	printf("\n 0. Exit");
+	printf("\n 1. Add Account at First");
+	printf("\n 2. Add Account at last");
+	printf("\n 3. Add Account at given position");
+	printf("\n 4. Delete Account from First");
+	printf("\n 5. Delete Account from last");
+	printf("\n 6. Delete Account from given position");
+	printf("\n 7. Delete All Accounts");
+	printf("\n 8. Find Account By Id");
+	printf("\n 10. Find Account By Name");
+	printf("\n 11. Display Accoutnts");
+	scanf("%d",&mchoice);
+	return mchoice;
+}
+BANKACC *create_node()
+{
+	BANKACC *newnode = (BANKACC*)malloc(sizeof(BANKACC));
+	printf("\nEnter Id : ");
+	scanf("%d",&(newnode->id));
+	scanf("%*c");
+	printf("\nEnter Account Type(Saving/Current) :");
+	scanf("%s",newnode->type);
+	scanf("%*c");
+	printf("\nEnter Balance : ");
+	scanf("%f",&(newnode->bal));
+	printf("\nEnter Account Holder Details : ");
+	printf("\n Name : ");
+	scanf("%*c");
+	scanf("%[^\n]s",newnode->acc_holder.name);
+	printf("\n Address : ");
+	scanf("%*c");
+	scanf("%[^\n]s",newnode->acc_holder.addrs);
+	printf("\n Contact Details : ");
+	scanf("%*c");
+	scanf("%s",newnode->acc_holder.cont);
+	newnode->next=NULL;
+	newnode->prev=NULL;
+	return newnode;
+
+}
+int main(void)
+{
+	MENU mchoice;
+	int pos;
+	while((mchoice=menu_choice())!=EXIT)
+	{
+		switch(mchoice)
+		{
+			case ADDFIRST:
+				add_at_first();
+		}
+	}
+
+
+	return EXIT_SUCCESS;
+}

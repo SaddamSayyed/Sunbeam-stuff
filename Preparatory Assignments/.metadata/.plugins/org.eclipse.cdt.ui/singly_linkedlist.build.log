@@ -1,0 +1,6 @@
+03:11:12 **** Incremental Build of configuration Debug for project singly_linkedlist ****
+make all 
+make: Nothing to be done for 'all'.
+
+03:11:12 Build Finished (took 71ms)
+

@@ -1,0 +1,8 @@
+23:13:56 **** Incremental Build of configuration Debug for project asgn_4 ****
+make all 
+make: Warning: File 'src/asgn_4.d' has modification time 62250088 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+
+23:13:57 Build Finished (took 66ms)
+

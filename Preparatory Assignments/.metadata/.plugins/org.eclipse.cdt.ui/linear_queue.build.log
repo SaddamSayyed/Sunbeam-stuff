@@ -1,0 +1,6 @@
+11:20:58 **** Incremental Build of configuration Debug for project linear_queue ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:20:58 Build Finished (took 69ms)
+

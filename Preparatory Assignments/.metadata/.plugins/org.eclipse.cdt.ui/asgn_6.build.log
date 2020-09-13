@@ -1,0 +1,7 @@
+17:50:15 **** Clean-only build of configuration Debug for project asgn_6 ****
+make clean 
+rm -rf  ./src/asgn_6.o  ./src/asgn_6.d  asgn_6
+ 
+
+17:50:16 Build Finished (took 124ms)
+

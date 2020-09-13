@@ -1,0 +1,61 @@
+/*
+ ============================================================================
+ Name        : asgn_4.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 3
+typedef struct book
+{
+	int id;
+	char name[20];
+	int price;
+}BOOK;
+int compare(const void *a,const void *b)
+{
+	return (*(int *)a-*(int *)b);
+}
+void accept_info(BOOK *p);
+void display_info(BOOK *p);
+int main(void)
+{
+	BOOK b[SIZE];
+	BOOK *p=b;
+	for(int i=0;i<SIZE;i++)
+		{
+			accept_info(&p[i]);
+		}
+
+	for(int i=0;i<SIZE;i++)
+		{
+			display_info(&p[i]);
+		}
+	qsort(b,SIZE,sizeof(int),compare);
+	printf("\nAfter the sorting\n");
+	for(int i=0;i<SIZE;i++)
+			{
+				display_info(&p[i]);
+			}
+	return EXIT_SUCCESS;
+}
+void accept_info(BOOK *p)
+{
+			printf("\nPlease enter Book info\n1)Book Id");
+			scanf("%d",&p->id);
+			scanf("%*c");
+			printf("\n2)Book Name:");
+			fgets(p->name,20,stdin);
+			printf("\n3)Price");
+			scanf("%d",&p->price);
+}
+void display_info(BOOK *p)
+{
+	printf("\n"
+			"1)ID: %d\n2)Name: %s3)price: %d",p->id,p->name,p->price);
+}

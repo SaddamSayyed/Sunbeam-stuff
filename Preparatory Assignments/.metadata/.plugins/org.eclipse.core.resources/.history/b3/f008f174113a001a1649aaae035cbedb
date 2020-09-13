@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : asgn_2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(void)
+{
+	char s[20]="HINJEWADI";
+	char d[20]="sunbeam ";
+	printf("s : %s\n",s);
+	printf("d : %s\n",d);
+	int n;
+	//strcpy(d,s);
+	//strcat(d,s);
+	//printf("\nAfter strcpy :\n");
+	//printf("\nAfter strcat :\n");
+	// n = strcmp(s,d);
+	strrev(d);
+	printf("\n n = %d\n",n);
+	printf("s : %s\n",s);
+	printf("d : %s\n",d);
+	return EXIT_SUCCESS;
+}
