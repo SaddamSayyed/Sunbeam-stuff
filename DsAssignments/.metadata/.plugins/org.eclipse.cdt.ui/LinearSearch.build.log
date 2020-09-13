@@ -1,0 +1,15 @@
+17:01:15 **** Incremental Build of configuration Debug for project LinearSearch ****
+make all 
+Building file: ../src/LinearSearch.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinearSearch.d" -MT"src/LinearSearch.o" -o "src/LinearSearch.o" "../src/LinearSearch.cpp"
+Finished building: ../src/LinearSearch.cpp
+ 
+Building target: LinearSearch
+Invoking: GCC C++ Linker
+g++  -o "LinearSearch"  ./src/LinearSearch.o   
+Finished building target: LinearSearch
+ 
+
+17:01:16 Build Finished (took 1s.379ms)
+

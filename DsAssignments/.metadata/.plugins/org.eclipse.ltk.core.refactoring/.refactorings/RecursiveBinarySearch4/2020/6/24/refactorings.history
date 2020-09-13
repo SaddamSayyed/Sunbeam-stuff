@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RecursiveBinarySearch4/src/BinarySearch.cpp&apos; to &apos;RecursiveBinarySearch.cpp&apos;" description="Rename resource &apos;BinarySearch.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/BinarySearch.cpp" name="RecursiveBinarySearch.cpp" stamp="1591532930741" updateReferences="true"/>
+</session>

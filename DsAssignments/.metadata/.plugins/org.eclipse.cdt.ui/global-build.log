@@ -1,0 +1,22 @@
+18:24:56 **** Incremental Build of configuration Debug for project RecursiveBinarySearch4 ****
+make all 
+Building file: ../src/RecursiveBinarySearch.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RecursiveBinarySearch.d" -MT"src/RecursiveBinarySearch.o" -o "src/RecursiveBinarySearch.o" "../src/RecursiveBinarySearch.cpp"
+../src/RecursiveBinarySearch.cpp: In function ‘int main()’:
+../src/RecursiveBinarySearch.cpp:30:27: warning: unused variable ‘mid’ [-Wunused-variable]
+  int l = 0, r = SIZE -1 , mid = 0;
+                           ^~~
+Finished building: ../src/RecursiveBinarySearch.cpp
+ 
+Building target: RecursiveBinarySearch4
+Invoking: GCC C++ Linker
+g++  -o "RecursiveBinarySearch4"  ./src/RecursiveBinarySearch.o   
+Finished building target: RecursiveBinarySearch4
+ 
+18:25:03 **** Incremental Build of configuration Debug for project RecursiveBinarySearch4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:25:15 **** Incremental Build of configuration Debug for project RecursiveBinarySearch4 ****
+make all 
+make: Nothing to be done for 'all'.
